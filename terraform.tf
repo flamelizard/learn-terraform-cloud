@@ -1,12 +1,14 @@
 terraform {
 
-  cloud {
-    organization = "organization-name"
+  # not needed for VCS-driven workflow
+  # cloud {
+  #   organization = "skynet-likes-you"
 
-    workspaces {
-      name = "learn-terraform-cloud"
-    }
-  }
+  #   # TFE assumes CLI-driven workflow when terraform init is executed in the terminal
+  #   workspaces {
+  #     name = "learn-terraform-cloud"
+  #   }
+  # }
 
   required_providers {
     aws = {
